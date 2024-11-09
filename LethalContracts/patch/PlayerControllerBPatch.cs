@@ -1,7 +1,7 @@
 ﻿using GameNetcodeStuff;
 using HarmonyLib;
 
-namespace YourThunderstoreTeam.patch;
+namespace DrSawickipedia.patch;
 
 /// <summary>
 /// Patch to modify the behavior of a player.
@@ -23,6 +23,7 @@ public class PlayerControllerBPatch
     private static bool OnPlayerJump(ref PlayerControllerB __instance)
     {
         HUDManager.Instance.AddTextToChatOnServer("isJumping: " + __instance.isJumping);
+        Plugin.Log.LogInfo("yumped");
         // When a player jumps, set isJumping to false to prevent the player from jumping.
         __instance.isJumping = false;
         return false;

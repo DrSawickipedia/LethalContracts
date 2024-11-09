@@ -5,10 +5,10 @@ schemaVersion = "0.0.1"
 repository = "https://thunderstore.io"
 
 [package]
-namespace = "YourThunderstoreTeam"
-name = "Template"
-description = "A template for Lethal Company plugins."
-websiteUrl = "https://github.com/Distractic/LethalCompanyTemplate"
+namespace = "DrSawickipedia"
+name = "LethalContracts"
+description = "TODO: actually write this description."
+websiteUrl = "https://github.com/DrSawickipedia/LethalContracts"
 containsNsfwContent = false
 
 [package.dependencies]
@@ -21,8 +21,8 @@ readme = "README.md"
 outdir = "build"
 
 [[build.copy]]
-source = "Template/bin/Template.dll"
-target = "BepInEx/plugins/Template.dll"
+source = "LethalContracts/bin/LethalContracts.dll"
+target = "BepInEx/plugins/LethalContracts.dll"
 
 [[build.copy]]
 source = "CHANGELOG.md"
